@@ -8,7 +8,7 @@ namespace Imc.Maui.Models
     {
         public static decimal CalcularImc(decimal peso, decimal estatura)
         {
-            return peso / estatura * estatura;
+            return peso / (estatura * estatura);
         }
         public static string ObtenerEstadoNutricional(decimal imc)
         {
