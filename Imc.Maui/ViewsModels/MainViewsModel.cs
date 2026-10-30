@@ -1,12 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Imc.Maui.Models;
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Windows.Input;
+
 
 namespace Imc.Maui.ViewsModels
 {
@@ -35,9 +32,9 @@ namespace Imc.Maui.ViewsModels
 
             if (pesoEsValido && estaturaEsValida)
             {
-               decimal imc = Calculadoraimc.CalcularImc(peso, estatura);
+               decimal imc = Calculadoraimc.IndiceDeMasaCorporal(peso, estatura);
                Imc = imc.ToString("F4");
-               EstadoNutricional = Calculadoraimc.ObtenerEstadoNutricional(imc);
+               EstadoNutricional = Calculadoraimc.EstadoNutricional(imc);
             }
         }
         [RelayCommand]
