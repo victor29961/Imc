@@ -67,12 +67,9 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Imc.Models" Version="1.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.120" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.13" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Imc.Models\Imc.Models.csproj" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.14" />
 	</ItemGroup>
 
 	<ItemGroup>
